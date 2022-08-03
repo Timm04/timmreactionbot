@@ -1,1 +1,1 @@
-worker: python reaction_main.py
+worker: python3 reaction_main.py
