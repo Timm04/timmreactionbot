@@ -287,7 +287,7 @@ async def on_raw_reaction_remove(payload):
                 role = discord.utils.get(guild.roles, name=y)
                 await member.remove_roles(role)
 
-client.run(token)
+client.run(os.environ["DISCORD_TOKEN"])
         #         if y not in [str(r.name) for r in guild.roles]:
         #             print("role doesnt exist so creating one")
         #             role = await guild.create_role(name=y,colour=discord.Colour(0x000000))
